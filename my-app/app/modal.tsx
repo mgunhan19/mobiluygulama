@@ -19,7 +19,7 @@ export default function ModalScreen() {
       <Text>Anasayfaya Dön</Text>
       </Link>
     <Text>Sayı: {say}</Text>
-    <Button title='Attır' onPress={arttırFonksiyonu}></Button>
+    <Button title='Artır' onPress={arttırFonksiyonu}></Button>
 
     </ThemedView>
   );

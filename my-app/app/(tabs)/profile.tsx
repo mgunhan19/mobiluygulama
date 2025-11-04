@@ -1,47 +1,51 @@
-import { StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function ProfileScreen(){
-return(
-    <View style={styles.container}>
-        <View style = {styles.redbox} ></View>
-        <View style = {styles.bluebox} ></View>
-        <View style = {styles.blackbox} ></View>
-        <Text>
-            Selam
-        </Text>
-   </View>
-)
+export default function ProfileScreen() {
+    const [isActive, setIsActive] = useState(false);
+    return(
+        <View style ={styles.container}>
+            <View style={[styles.box, 
+                {backgroundColor: isActive ? '#a0ff78ff' : '#780e08ff',}
+                ]}>
+                <Text>
+                    {isActive ? 'Aktif' : 'Pasif'}
+                </Text>
+            </View>
+            <TouchableOpacity style={styles.button}
+            onPress={() => setIsActive(!isActive)}
+            >
+                <Text style={styles.buttonText}>
+                    Durumu değiştir
+                </Text>
+            </TouchableOpacity>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({
-    container:{
+    container: {
         flex:1,
-        flexDirection:"row",
-        justifyContent: "space-between",
-        // alignItems:"flex-end", // satır düzeyinde ortalama
-        // justifyContent:"flex-start", // yükseklik düzeyinde ortalama
-        paddingTop:74, // yukarıdan boşluk
-        padding:12, // dört taraftan boşluk
+        justifyContent:"center",
+        alignItems:"center",
     },
-    yazi:{
-        fontSize: 23,
+    box:{
+        width:100,
+        height:100,
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:20,
+        marginBottom:20,
     },
-    redbox: {
-     borderRadius:12,
-      width: 100,
-      height: 100,
-      backgroundColor: '#6B4429'
-   },
-   bluebox: {
-    borderRadius:12,
-      width: 100,
-      height: 100,
-      backgroundColor: '#D0854F'
-   },
-   blackbox: {
-    borderRadius:12,
-      width: 100,
-      height: 100,
-      backgroundColor: '#D98A52'
-   },
+    button:{
+        paddingHorizontal:20,
+        paddingVertical:10,
+        backgroundColor:"#007AFF",
+        borderRadius:5,
+    },
+    buttonText:{
+        color:"#fff",
+        fontWeight:"bold",
+    }
+
 })
