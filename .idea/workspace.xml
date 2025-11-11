@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a05623-aa5a-46fb-b155-3b2150fcf3c7" name="Changes" comment="Initial commit">
+    <list default="true" id="c3a05623-aa5a-46fb-b155-3b2150fcf3c7" name="Changes" comment="Guncelemelerr">
+      <change afterPath="$PROJECT_DIR$/my-app/app/(tabs)/start.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/app/(tabs)/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/app/(tabs)/box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/app/(tabs)/box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/app/(tabs)/explore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/app/(tabs)/explore.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/app/(tabs)/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/app/(tabs)/profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/app/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/app/modal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,20 +24,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "searchQuery": "react",
-      "state": "OPEN",
-      "assignee": "mgunhan19"
+      &quot;searchQuery&quot;: &quot;react&quot;,
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;mgunhan19&quot;
     }
   ],
-  "lastFilter": {
-    "searchQuery": "react",
-    "state": "OPEN",
-    "assignee": "mgunhan19"
+  &quot;lastFilter&quot;: {
+    &quot;searchQuery&quot;: &quot;react&quot;,
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mgunhan19&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mgunhan19/mobiluygulama.git&quot;,
@@ -97,12 +99,41 @@
       <option name="project" value="LOCAL" />
       <updated>1762198018382</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Guncelemeler">
+      <option name="closed" value="true" />
+      <created>1762245803232</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762245803232</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Guncelemeler">
+      <option name="closed" value="true" />
+      <created>1762245868249</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762245868249</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Guncelemelerr">
+      <option name="closed" value="true" />
+      <created>1762245918559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762245918559</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ts" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Guncelemeler" />
+    <MESSAGE value="Guncelemelerr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guncelemelerr" />
   </component>
 </project>

@@ -4,11 +4,13 @@ import { Platform, StyleSheet,View } from 'react-native';
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
+
       <Link href={'/(tabs)'}>
+      
       Anasayfaya git
       </Link>
     </View>
-  
+
   );
 }
 const styles = StyleSheet.create({
@@ -17,4 +19,5 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center'
   }
+  
 })

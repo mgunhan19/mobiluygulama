@@ -1,30 +1,31 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-export default function BoxPage(){
-    return(
-<View style={styles.container}>
+import { View, StyleSheet } from 'react-native';
+const styles = StyleSheet.create({
+containerNoWrap: {
+flex: 1,
+flexDirection: 'row',
+flexWrap: 'nowrap', // Öğeler sıkıştırılır
+},
+containerWrap: {
+flex: 1,
+flexDirection: 'row',
+flexWrap: 'wrap', // Yeni satıra geçer
+},
+box: {
+width: 100,
+height: 100,
+backgroundColor: '#FF6B6B',
+margin: 5,
+},
+});
+export default function FlexWrapExample() {
+return (
+<View style={styles.containerWrap}>
+<View style={styles.box} />
+<View style={styles.box} />
 <View style={styles.box} />
 <View style={styles.box} />
 <View style={styles.box} />
 </View>
-    )
-
+);
 }
-
-
-const styles = StyleSheet.create({
-container: {
-flex: 1, // Tüm ekranı kapla
-backgroundColor: '#4ab6f5ff',
-flexDirection:'center',
-alignItems:'center',
-},
-box: {
-flex: 1,
-width:60,
-height:60,
-backgroundColor: '#FF6B6B',
-borderRadius:5,
-},
-
-});

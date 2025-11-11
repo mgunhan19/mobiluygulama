@@ -1,51 +1,59 @@
+import { Link } from 'expo-router';
 import { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function ProfileScreen() {
-    const [isActive, setIsActive] = useState(false);
+export default function ProfileScreen(){
+    const [isActive , setIsActive] = useState(false);
     return(
-        <View style ={styles.container}>
-            <View style={[styles.box, 
-                {backgroundColor: isActive ? '#a0ff78ff' : '#780e08ff',}
-                ]}>
-                <Text>
-                    {isActive ? 'Aktif' : 'Pasif'}
-                </Text>
+        <View style={style.container}>
+            <View style={[style.box,
+                {
+                    backgroundColor: isActive ? '#e3e63cff' : '#ff0000ff',
+                }
+            ]}>
+                <Text>{isActive ?"Aktif":"Pasif"}</Text>
             </View>
-            <TouchableOpacity style={styles.button}
-            onPress={() => setIsActive(!isActive)}
-            >
-                <Text style={styles.buttonText}>
-                    Durumu değiştir
+            <TouchableOpacity style={style.button} onPress={() =>setIsActive(!isActive)}>
+                <Text style={style.button}>
+                    Durum Değiştir
                 </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={style.button2} onPress={() =>setIsActive(!isActive)}>
+                <Link style={style.button} href={'/(tabs)'}>
+                 Anasayfaya Git
+                 </Link>
             </TouchableOpacity>
         </View>
     )
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex:1,
-        justifyContent:"center",
-        alignItems:"center",
+const style = StyleSheet.create({
+    container:{
+       flex:1,
+       justifyContent:'center',
+       alignItems:'center',
+
     },
     box:{
-        width:100,
-        height:100,
-        justifyContent:"center",
-        alignItems:"center",
-        borderRadius:20,
+        width:150,
+        height:150,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:10,
         marginBottom:20,
     },
     button:{
         paddingHorizontal:20,
         paddingVertical:10,
-        backgroundColor:"#007AFF",
         borderRadius:5,
+        backgroundColor:'#b20c0cff',
     },
-    buttonText:{
-        color:"#fff",
-        fontWeight:"bold",
+        button2:{
+        marginTop:10,
+        paddingHorizontal:20,
+        paddingVertical:10,
+        borderRadius:5,
+        backgroundColor:'#b20c0cff',
     }
-
+    
 })
